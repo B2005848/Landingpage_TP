@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thienphuocbocxep.id.vn
+
+# Sitemaps
+Sitemap: https://thienphuocbocxep.id.vn/sitemap.xml

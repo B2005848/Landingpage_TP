@@ -96,6 +96,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/icon.svg" type="image/png" />
+        <meta
+          name="google-site-verification"
+          content="HtVQLShfK9IOJPpEGhWpkrThZ9E8e62LDZNFrNk1P10"
+        />
       </head>
       <body className="text-gray-800 bg-white">
         <Header />
