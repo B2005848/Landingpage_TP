@@ -1,9 +1,14 @@
-# *
+# Cho phép mọi bot truy cập toàn bộ website
 User-agent: *
 Allow: /
 
-# Host
-Host: https://thienphuocbocxep.id.vn
+# Ngăn Google index một số file/thư mục không cần thiết (nếu có)
+Disallow: /_next/
+Disallow: /api/
+Disallow: /static/
 
-# Sitemaps
+# Khai báo tên miền chính (tùy chọn, không bắt buộc)
+Host: thienphuocbocxep.id.vn
+
+# Đường dẫn Sitemap
 Sitemap: https://thienphuocbocxep.id.vn/sitemap.xml
