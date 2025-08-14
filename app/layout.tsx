@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/png" />
       </head>
-      <body className="bg-white text-gray-800">
+      <body className="text-gray-800 bg-white">
         <Header />
         <main>{children}</main>
         <Footer />

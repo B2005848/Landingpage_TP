@@ -1,13 +1,18 @@
 "use client";
 
 import { useState } from "react";
-
+import Script from "next/script";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <header className="flex items-center justify-between px-6 py-4 font-sans bg-white rounded-lg shadow-md">
       {/* Logo */}
+      <Script
+        src="/js/scrollAnimation.js"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      ></Script>
       <div className="flex items-center">
         <img src="/icon.svg" alt="Logo" className="w-32 h-auto" />
 
@@ -19,7 +24,7 @@ export default function Header() {
 
       {/* Menu desktop */}
       <nav className="hidden md:block">
-        <ul className="flex space-x-6 font-bold items-center justify-center align-middle">
+        <ul className="flex items-center justify-center space-x-6 font-bold align-middle">
           <li>
             <a href="#services" className="hover:text-blue-500">
               DỊCH VỤ
@@ -35,16 +40,22 @@ export default function Header() {
               ĐỊA BÀN HOẠT ĐỘNG
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579351585076"
+              className="hover:text-blue-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LIÊN HỆ NGAY
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <div className="hidden md:block shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-red-500 p-5 text-white rounded-lg">
-        <h1> Hotline: 0363967726</h1>
-      </div>
-
       {/* Icon menu mobile */}
       <button
-        className="md:hidden flex flex-col space-y-1"
+        className="flex flex-col space-y-1 md:hidden"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <span className="w-6 h-0.5 bg-gray-800"></span>
@@ -54,7 +65,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       {menuOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+        <nav className="absolute left-0 w-full bg-white shadow-md top-16 md:hidden">
           <ul className="flex flex-col items-center py-4 space-y-4 font-medium">
             <li>
               <a href="#services" onClick={() => setMenuOpen(false)}>

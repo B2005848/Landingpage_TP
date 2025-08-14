@@ -1,18 +1,12 @@
 // Services.tsx
 "use client";
 import Image from "next/image";
+import "../styles/Services.css";
+
 export default function Services() {
-  const services = [
-    "Bốc xếp hàng hóa đóng container",
-    "Vận chuyển nhà, văn phòng, kho xưởng",
-    "Dọn dẹp nhà cửa chuyên nghiệp",
-    "Cung ứng nhân lực theo giờ",
-    "Dịch vụ phun diệt mối, muỗi và côn trùng",
-    "...........",
-  ];
   return (
-    <section id="services" className=" bg-white mb-5">
-      <div className="display flex justify-end mb-5 ">
+    <section id="services" className="mb-5 bg-white ">
+      <div className="flex justify-end mb-5 display ">
         <Image
           src="/contreo.svg"
           alt="Dịch vụ xe container bốc xếp hàng hóa"
@@ -23,15 +17,28 @@ export default function Services() {
       </div>
 
       <div>
-        <h3 className="text-3xl font-bold text-center mb-10">
+        <h3 className="mb-10 text-3xl font-bold text-center">
           ⚡Dịch vụ của chúng tôi⚡
         </h3>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {services.map((service, idx) => (
-            <li key={idx} className="bg-gray-50 p-6 rounded-lg shadow-md">
-              {service}
-            </li>
-          ))}
+        <ul className="grid max-w-4xl grid-cols-1 gap-6 mx-auto md:grid-cols-2">
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>Bốc xếp hàng hóa đóng container</p>
+          </li>
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>Dọn dẹp nhà cửa chuyên nghiệp</p>
+          </li>
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>Cung ứng nhân lực theo giờ</p>
+          </li>
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>Dịch vụ phun diệt mối, muỗi và côn trùng</p>
+          </li>
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>Vận chuyển nhà, văn phòng, kho xưởng</p>
+          </li>
+          <li className="p-6 rounded-lg shadow-md paragraph_service bg-gray-50">
+            <p>....................................</p>
+          </li>
         </ul>
       </div>
     </section>
