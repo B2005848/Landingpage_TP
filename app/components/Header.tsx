@@ -14,7 +14,11 @@ export default function Header() {
         strategy="afterInteractive"
       ></Script>
       <div className="flex items-center">
-        <img src="/icon.svg" alt="Logo" className="w-32 h-auto" />
+        <img
+          src="/icon.svg"
+          alt="LogoThienPhuocBocXep"
+          className="w-32 h-auto"
+        />
 
         <span className="ml-2 text-xl font-bold">
           <h1>THIỆN PHƯỚC</h1>
