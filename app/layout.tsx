@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Dịch vụ Vận Tải Bốc Xếp Thiện Phước Bình Dương",
+  title: "Bốc Xếp Thiện Phước Bình Dương",
   description:
     "Dịch vụ vận tải bốc xếp hàng hóa chuyên nghiệp tại Bình Dương. Giá rẻ, nhanh chóng, an toàn, uy tín.",
   keywords: [
