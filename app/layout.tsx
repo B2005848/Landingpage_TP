@@ -77,6 +77,8 @@ export const metadata = {
         url: "https://thienphuocbocxep.id.vn/BIAFB.jpg",
         width: 1200,
         height: 630,
+        alt: "Bốc Xếp Thiện Phước Bình Dương",
+        type: "image/jpeg",
       },
     ],
     locale: "vi_VN",
