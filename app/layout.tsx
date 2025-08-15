@@ -74,7 +74,7 @@ export const metadata = {
     siteName: "Thiện Phước Vận Tải",
     images: [
       {
-        url: "/BIAFB.jpg",
+        url: "https://thienphuocbocxep.id.vn/BIAFB.jpg",
         width: 1200,
         height: 630,
       },
