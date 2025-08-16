@@ -102,6 +102,30 @@ export default function RootLayout({
           name="google-site-verification"
           content="HtVQLShfK9IOJPpEGhWpkrThZ9E8e62LDZNFrNk1P10"
         />
+
+        {/* Schema.org for logo & organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Thiện Phước Vận Tải",
+              url: "https://thienphuocbocxep.id.vn",
+              logo: "https://thienphuocbocxep.id.vn/icon.svg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "0363967726",
+                contactType: "customer service",
+                areaServed: "VN",
+                availableLanguage: "Vietnamese",
+              },
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61579351585076",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="text-gray-800 bg-white">
         <Header />
