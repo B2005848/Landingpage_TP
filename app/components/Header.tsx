@@ -1,18 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Script from "next/script";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="flex items-center justify-between px-6 py-4 font-sans bg-white rounded-lg shadow-md">
       {/* Logo */}
-      <Script
-        src="/js/scrollAnimation.js"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      ></Script>
+
       <div className="flex items-center">
         <img
           src="/icon.svg"

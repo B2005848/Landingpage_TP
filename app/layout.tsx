@@ -1,7 +1,8 @@
 // app/layout.tsx
-import "/styles/globals.css";
+import "./styles/globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 export const metadata = {
   title: "Bốc Xếp Thiện Phước Bình Dương",
@@ -102,7 +103,11 @@ export default function RootLayout({
           name="google-site-verification"
           content="HtVQLShfK9IOJPpEGhWpkrThZ9E8e62LDZNFrNk1P10"
         />
-
+        <Script
+          src="/js/scrollAnimation.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        ></Script>
         {/* Schema.org for logo & organization */}
         <script
           type="application/ld+json"
